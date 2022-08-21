@@ -1,0 +1,41 @@
+.row-container {
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 10px;
+  color: white;
+}
+
+.row-cards {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  margin: 0px 0px 0px 1px;
+}
+
+.row-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  object-fit: contain;
+  width: 100%;
+  max-height: 206px;
+  margin-bottom: 4px;
+  transition: transform 450ms;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.movie-card-large {
+  object-fit: contain;
+  width: 100%;
+  max-height: 207px;
+  margin-bottom: 8px;
+  transition: transform 450ms;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+}
